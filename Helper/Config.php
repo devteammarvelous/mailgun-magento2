@@ -89,7 +89,7 @@ class Config extends AbstractHelper
      */
     public function ssl()
     {
-        return $this->endpoint() == 'api.mailgun.net' ? true : false;
+        return ($this->endpoint() == 'api.mailgun.net' || $this->endpoint() == 'api.eu.mailgun.net' )  ? true : false;
     }
 
 }
