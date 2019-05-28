@@ -77,7 +77,7 @@ class Config extends AbstractHelper
      */
     public function version()
     {
-        if ($this->endpoint() == 'api.mailgun.net') {
+        if ($this->endpoint() == 'api.mailgun.net' || $this->endpoint() == 'api.eu.mailgun.net') {
             return 'v3';
         }
 
