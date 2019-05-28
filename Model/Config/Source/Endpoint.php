@@ -21,6 +21,7 @@ class Endpoint implements \Magento\Framework\Option\ArrayInterface
     public function toOptionArray()
     {
         return [
+            ['value' => 'api.eu.mailgun.net', 'label' => __('Mailgun EU API (live)')],
             ['value' => 'api.mailgun.net', 'label' => __('Mailgun API (live)')],
             ['value' => 'bin.mailgun.net', 'label' => __('Mailgun Postbin (debug)')]
         ];
@@ -34,6 +35,7 @@ class Endpoint implements \Magento\Framework\Option\ArrayInterface
     public function toArray()
     {
         return [
+            'api.eu.mailgun.net' => __('Mailgun EU API (live)'),
             'api.mailgun.net' => __('Mailgun API (live)'),
             'bin.mailgun.net' => __('Mailgun Postbin (debug)')
         ];
